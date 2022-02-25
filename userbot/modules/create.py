@@ -15,7 +15,7 @@ async def telegraphs(grop):
         if type_of_group == "gb":
             try:
                 result = await grop.client(functions.messages.CreateChatRequest(  # pylint:disable=E0602
-                    users=["@MissRose_bot"],
+                    users=["@ChitandaEruRobot"],
                     # Not enough users (to create a chat, for example)
                     # Telegram, no longer allows creating a chat with ourselves
                     title=group_name
@@ -31,7 +31,7 @@ async def telegraphs(grop):
             try:
                 r = await grop.client(functions.channels.CreateChannelRequest(  # pylint:disable=E0602
                     title=group_name,
-                    about="`Selamat Datang Di Channel Ini!`",
+                    about="`Yo, Selamat Datang!`",
                     megagroup=False if type_of_group == "c" else True
                 ))
                 created_chat_id = r.chats[0].id
