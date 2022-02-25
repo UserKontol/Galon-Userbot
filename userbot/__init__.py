@@ -228,7 +228,9 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .galonalive
-GALON_CUSTOM_TEXT = os.environ.get("GALON_CUSTOM_TEXT", "Yo! I am Using Galon-Userbot.")
+GALON_CUSTOM_TEXT = os.environ.get(
+    "GALON_CUSTOM_TEXT",
+    "Yo! I am Using Galon-Userbot.")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -274,7 +276,7 @@ INLINE_PIC = os.environ.get(
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or ""
 
 # Galih
-OWNER_URL =  "https://t.me/glixyr"
+OWNER_URL = "https://t.me/glixyr"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -410,7 +412,8 @@ with bot:
     try:
         bot.loop.run_until_complete(checking())
     except BaseException:
-        LOGS.info("Join Support Group @GalonSupport and Channel @GalonUpdates to see the updates of userbot!")
+        LOGS.info(
+            "Join Support Group @GalonSupport and Channel @GalonUpdates to see the updates of userbot!")
         quit(1)
 
 
@@ -645,7 +648,8 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@shackchiwbot"):
+            if event.query.user_id == uid and query.startswith(
+                    "@shackchiwbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=roselogo,
@@ -666,7 +670,9 @@ with bot:
                     text="**Galon - Userbot**\n\n **Owner Repo :** [Galih](https://t.me/glixyr)\n **Support :** @GalonSupport\n **Repository :** [Galon-Userbot](https://github.com/galihpujiirianto/Galon-Userbot)\n",
                     buttons=[
                         [
-                            custom.Button.url("Support!", "https://t.me/GalonSupport"),
+                            custom.Button.url(
+                                "Support!",
+                                "https://t.me/GalonSupport"),
                             custom.Button.url(
                                 "Source Code",
                                 "https://github.com/galihpujiirianto/Galon-Userbot"),
@@ -719,7 +725,9 @@ with bot:
                     text=f"**Galon - Userbot**\n\n **Owner:** [{user.first_name}](tg://user?id={user.id})\n **Assistant:** {tgbotusername}\n\n**Updates:** @GalonUpdates\n",
                     buttons=[
                         [
-                            custom.Button.url("Support!", "https://t.me/GalonSupport"),
+                            custom.Button.url(
+                                "Support!",
+                                "https://t.me/GalonSupport"),
                             custom.Button.url(
                                 "Source Code",
                                 "https://github.com/galihpujiirianto/Galon-Userbot"),
