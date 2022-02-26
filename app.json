@@ -2,26 +2,19 @@
   "name": "Galon-Userbot",
   "description": "USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/5691a1f2ab21ffb310b94.jpg",
-  "keywords": [
-    "telegram",
-    "userbot",
-    "plugin",
-    "modular",
-    "productivity"
-  ],
+  "keywords": ["telegram","userbot","plugin","modular","productivity"],
   "repository": "https://github.com/galihpujiirianto16/Galon-Userbot/",
-  "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan Api Key di web my.telegram.org",
+      "description": "Login ke https://my.telegram.org, lalu ambil api_id",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan Api Hash Di Web my.telegram.org",
+      "description": "Login ke https://my.telegram.org, lalu ambil api_hash",
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Telethon String Session",
+      "description": "Telethon String Session, gabung ke @GalonSupport lalu ketikkan #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -34,15 +27,16 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
+      "description": "Buatlah grup publik dengan menambahkan bot @ChitandaEruRobot lalu ketikkan /id. Contoh : -1001234567890",
       "required": true
+	  "value": "-100"
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
+      "description": "Bila tidak mau repot, isinya bisa disamakan seperti BOTLOG_CHATID",
       "required": true
     },
     "PM_AUTO_BAN": {
-      "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module. or /skip",
+      "description": "Bila suka terganggu bila dichat orang, atur ke True",
       "value": "False",
       "required": true
     },
