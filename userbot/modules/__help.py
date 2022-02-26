@@ -22,12 +22,12 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import BOT_USERNAME, bot
 from userbot import CMD_HANDLER as cmd
-from userbot.utils import edit_or_reply
+from userbot.utils import edit_or_reply, galoncmd
 
 tgbotusername = BOT_USERNAME
 
 
-@kyy_cmd(pattern="helpme$")
+@galoncmd(pattern="helpme$")
 async def yardim(event):
     if event.fwd_from:
         return
