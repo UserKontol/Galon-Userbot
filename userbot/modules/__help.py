@@ -22,7 +22,7 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import BOT_USERNAME, bot
 from userbot import CMD_HANDLER as cmd
-from userbot.utils import edit_or_reply, galoncmd
+from userbot.utils import edit_or_reply
 
 tgbotusername = BOT_USERNAME
 
