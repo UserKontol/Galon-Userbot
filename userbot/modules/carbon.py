@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from urllib.parse import quote_plus
 from asyncio import sleep
 from userbot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
 CARBONLANG = "auto"
@@ -18,14 +18,14 @@ TRT_LANG = "en"
 TEMP_DOWNLOAD_DIRECTORY = "/root/userbot/.bin"
 
 
-@kyy_cmd(pattern="crblang (.*)")
+@galoncmd(pattern="crblang (.*)")
 async def setlang(prog):
     global CARBONLANG
     CARBONLANG = prog.pattern_match.group(1)
     await prog.edit(f"Language for carbon.now.sh set to {CARBONLANG}")
 
 
-@kyy_cmd(pattern="carbon1")
+@galoncmd(pattern="carbon1")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
@@ -91,7 +91,7 @@ async def carbon_api(e):
     await e.delete()  # Deleting msg
 
 
-@kyy_cmd(pattern="carbon2")
+@galoncmd(pattern="carbon2")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
@@ -157,7 +157,7 @@ async def carbon_api(e):
     await e.delete()  # Deleting msg
 
 
-@kyy_cmd(pattern="carbon3")
+@galoncmd(pattern="carbon3")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
@@ -223,7 +223,7 @@ async def carbon_api(e):
     await e.delete()  # Deleting msg
 
 
-@kyy_cmd(pattern="carbon4")
+@galoncmd(pattern="carbon4")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
@@ -289,7 +289,7 @@ async def carbon_api(e):
     await e.delete()  # Deleting msg
 
 
-@kyy_cmd(pattern="carbon")
+@galoncmd(pattern="carbon")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")

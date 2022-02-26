@@ -1,7 +1,7 @@
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import bot, CMD_HELP, ALIVE_NAME, CMD_HANDLER as cmd
 from platform import uname
 
@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@kyy_cmd(pattern="igsaver ?(.*)")
+@galoncmd(pattern="igsaver ?(.*)")
 async def igsaver(event):
     if event.fwd_from:
         return

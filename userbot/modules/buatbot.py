@@ -5,12 +5,12 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 chat = "@BotFather"
 
 
-@kyy_cmd(pattern="botbaru ?(.*)")
+@galoncmd(pattern="botbaru ?(.*)")
 async def _(event):
     if event.fwd_from:
         return

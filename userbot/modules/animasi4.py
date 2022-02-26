@@ -1,11 +1,11 @@
 from time import sleep
 from userbot import CMD_HELP, bot, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from telethon import events
 import asyncio
 
 
-@kyy_cmd(pattern="sayang$")
+@galoncmd(pattern="sayang$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("I LOVEE YOUUU 💕")
@@ -34,7 +34,7 @@ async def koc(e):
         await e.edit("SAYANG KAMU💞")
 
 
-@kyy_cmd(pattern='dino(?: |$)(.*)')
+@galoncmd(pattern='dino(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`DIN DINNN.....`")
@@ -92,7 +92,7 @@ async def typewriter(typew):
     await typew.edit("`-TAMAT-`")
 
 
-@kyy_cmd(pattern="gabut$")
+@galoncmd(pattern="gabut$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`PERNAAHHHHH KAHHH KAUUU MENGIRA`")

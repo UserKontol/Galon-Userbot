@@ -4,7 +4,7 @@ from telethon.tl.types import MessageEntityMentionName
 
 from userbot import ALIVE_NAME, CMD_HELP, DEVS, bot, CMD_HANDLER as cmd
 from userbot.events import register
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
 async def get_full_user(event):
@@ -81,7 +81,7 @@ async def handler(tele):
                             return
 
 
-@kyy_cmd(pattern="gban(?: |$)(.*)")
+@galoncmd(pattern="gban(?: |$)(.*)")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cgban(?: |$)(.*)")
 async def gben(userbot):
     dc = userbot
@@ -150,7 +150,7 @@ async def gben(userbot):
     )
 
 
-@kyy_cmd(pattern="ungban(?: |$)(.*)")
+@galoncmd(pattern="ungban(?: |$)(.*)")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cungban(?: |$)(.*)")
 async def gunben(userbot):
     dc = userbot

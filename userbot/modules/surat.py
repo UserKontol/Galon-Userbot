@@ -1,10 +1,10 @@
 from time import sleep
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern='alfatihah(?: |$)(.*)')
+@galoncmd(pattern='alfatihah(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)

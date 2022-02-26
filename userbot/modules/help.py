@@ -7,7 +7,7 @@
 
 import asyncio
 from userbot import ALIVE_NAME, CMD_HELP
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from platform import uname
 
 modules = CMD_HELP
@@ -17,7 +17,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@kyy_cmd(pattern="help(?: |$)(.*)")
+@galoncmd(pattern="help(?: |$)(.*)")
 async def help(event):
     """ For .help command,"""
     args = event.pattern_match.group(1).lower()

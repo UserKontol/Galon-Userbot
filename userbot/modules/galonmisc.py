@@ -8,7 +8,7 @@ import time
 import html
 from justwatch import JustWatch
 from telethon import *
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import CMD_HELP, bot, TEMP_DOWNLOAD_DIRECTORY, DEFAULT_BIO, ALIVE_NAME, CMD_HANDLER as cmd
 from telethon import events
 from telethon.tl import functions
@@ -88,7 +88,7 @@ if 1 == 1:
     client = bot
 
 
-@kyy_cmd(pattern="app(?: |$)(.*)")
+@galoncmd(pattern="app(?: |$)(.*)")
 async def apk(e):
     try:
         app_name = e.pattern_match.group(1)
@@ -133,7 +133,7 @@ async def apk(e):
         await e.edit("Exception Occured:- " + str(err))
 
 
-@kyy_cmd(pattern="undlt(?: |$)(.*)")
+@galoncmd(pattern="undlt(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -148,7 +148,7 @@ async def _(event):
         await event.delete()
 
 
-@kyy_cmd(pattern="calc(?: |$)(.*)")
+@galoncmd(pattern="calc(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -182,7 +182,7 @@ async def _(event):
         await event.edit("use .calc help")
 
 
-@kyy_cmd(pattern="xcd(?: |$)(.*)")
+@galoncmd(pattern="xcd(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -229,7 +229,7 @@ Year: {}""".format(img, input_str, xkcd_link, safe_title, alt, day, month, year)
         await event.edit("xkcd n.{} not found!".format(xkcd_id))
 
 
-@kyy_cmd(pattern="remove(?: |$)(.*)")
+@galoncmd(pattern="remove(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -377,7 +377,7 @@ async def ban_user(chat_id, i, rights):
         return False, str(exc)
 
 
-@kyy_cmd(pattern="rnupload(?: |$)(.*)")
+@galoncmd(pattern="rnupload(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -421,7 +421,7 @@ async def _(event):
         await event.edit("Syntax // .rnupload filename.extension as reply to a Telegram media")
 
 
-@kyy_cmd(pattern="grab(?: |$)(.*)")
+@galoncmd(pattern="grab(?: |$)(.*)")
 async def potocmd(event):
     """Gets the profile photos of replied users, channels or chats"""
     id = "".join(event.raw_text.split(maxsplit=2)[1:])
@@ -454,7 +454,7 @@ async def potocmd(event):
             return
 
 
-@kyy_cmd(pattern="res(?: |$)(.*)")
+@galoncmd(pattern="res(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -489,7 +489,7 @@ async def _(event):
             await event.client.delete_message(chat, event.chat_id, response.message)
 
 
-@kyy_cmd(pattern="clone(?: |$)(.*)")
+@galoncmd(pattern="clone(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -668,7 +668,7 @@ def get_provider(url):
     return url
 
 
-@kyy_cmd(pattern="watch(?: |$)(.*)")
+@galoncmd(pattern="watch(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -715,7 +715,7 @@ async def _(event):
 # Modified by :- @kirito6969,@deleteduser420
 
 
-@kyy_cmd(pattern="weeb(?: |$)(.*)")
+@galoncmd(pattern="weeb(?: |$)(.*)")
 async def weebify(event):
 
     args = event.pattern_match.group(1)
@@ -762,7 +762,7 @@ boldfont = [
     '𝘇']
 
 
-@kyy_cmd(pattern="^.bold(?: |$)(.*)")
+@galoncmd(pattern="^.bold(?: |$)(.*)")
 async def thicc(bolded):
 
     args = bolded.pattern_match.group(1)
@@ -809,7 +809,7 @@ medievalbold = [
     '𝖟']
 
 
-@kyy_cmd(pattern="medbold(?: |$)(.*)")
+@galoncmd(pattern="medbold(?: |$)(.*)")
 async def mediv(medievalx):
 
     args = medievalx.pattern_match.group(1)
@@ -856,7 +856,7 @@ doublestruckt = [
     '𝕫']
 
 
-@kyy_cmd(pattern="doublestruck(?: |$)(.*)")
+@galoncmd(pattern="doublestruck(?: |$)(.*)")
 async def doublex(doublestrucktx):
 
     args = doublestrucktx.pattern_match.group(1)
@@ -903,7 +903,7 @@ cursiveboldx = [
     '𝔃']
 
 
-@kyy_cmd(pattern="curbold(?: |$)(.*)")
+@galoncmd(pattern="curbold(?: |$)(.*)")
 async def cursive2(cursivebolded):
 
     args = cursivebolded.pattern_match.group(1)
@@ -951,7 +951,7 @@ medival2 = [
     '𝔷']
 
 
-@kyy_cmd(pattern="medi(?: |$)(.*)")
+@galoncmd(pattern="medi(?: |$)(.*)")
 async def medival22(medivallite):
 
     args = medivallite.pattern_match.group(1)
@@ -998,7 +998,7 @@ cursive = [
     '𝓏']
 
 
-@kyy_cmd(pattern="cur(?: |$)(.*)")
+@galoncmd(pattern="cur(?: |$)(.*)")
 async def xcursive(cursivelite):
 
     args = cursivelite.pattern_match.group(1)
@@ -1016,7 +1016,7 @@ async def xcursive(cursivelite):
     await cursivelite.edit(string)
 
 
-@kyy_cmd(pattern="rclone(?: |$)(.*)")
+@galoncmd(pattern="rclone(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return

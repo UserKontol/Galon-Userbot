@@ -18,7 +18,7 @@ from userbot import (
     HEROKU_APP_NAME,
     UPSTREAM_REPO_URL,
     UPSTREAM_REPO_BRANCH)
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), 'requirements.txt')
@@ -144,7 +144,7 @@ async def update(event, repo, ups_rem, ac_br):
     return
 
 
-@kyy_cmd(pattern="update(?: |$)(now|deploy)?")
+@galoncmd(pattern="update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     await event.edit("**Mengecek Pembaruan, Silakan Menunggu....**")

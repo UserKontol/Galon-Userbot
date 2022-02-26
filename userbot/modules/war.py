@@ -1,9 +1,9 @@
 from time import sleep
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern="jamet(?: |$)(.*)")
+@galoncmd(pattern="jamet(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**WOII**")
@@ -29,7 +29,7 @@ async def typewriter(typew):
     await typew.edit("**LEMBEK NGENTOT🔥**")
 
 
-@kyy_cmd(pattern="pp(?: |$)(.*)")
+@galoncmd(pattern="pp(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -37,31 +37,31 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="dp(?: |$)(.*)")
+@galoncmd(pattern="dp(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**MUKA LU HINA, GAUSAH SOK KERAS YA NGENTOT!!**")
 
 
-@kyy_cmd(pattern="so(?: |$)(.*)")
+@galoncmd(pattern="so(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GAUSAH SOKAB SAMA GUA NGENTOT, LU BABU GA LEVEL!!**")
 
 
-@kyy_cmd(pattern="nb(?: |$)(.*)")
+@galoncmd(pattern="nb(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**MAEN BOT MULU ALAY NGENTOTT, KESANNYA NORAK GOBLOK!!!**")
 
 
-@kyy_cmd(pattern="met(?: |$)(.*)")
+@galoncmd(pattern="met(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**NAMANYA JUGA JAMET CAPER SANA SINI BUAT CARI NAMA BHAHAHA**")
 
 
-@kyy_cmd(pattern="war(?: |$)(.*)")
+@galoncmd(pattern="war(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -69,7 +69,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="wartai(?: |$)(.*)")
+@galoncmd(pattern="wartai(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -77,7 +77,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="kismin(?: |$)(.*)")
+@galoncmd(pattern="kismin(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -85,13 +85,13 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="ded(?: |$)(.*)")
+@galoncmd(pattern="ded(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**MATI AJA LU GOBLOK, GAGUNA LU HIDUP DI BUMI**")
 
 
-@kyy_cmd(pattern="sokab(?: |$)(.*)")
+@galoncmd(pattern="sokab(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -99,7 +99,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="gembel(?: |$)(.*)")
+@galoncmd(pattern="gembel(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
@@ -107,7 +107,7 @@ async def typewriter(typew):
     )
 
 
-@kyy_cmd(pattern="cuih(?: |$)(.*)")
+@galoncmd(pattern="cuih(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(

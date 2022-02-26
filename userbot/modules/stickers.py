@@ -20,7 +20,7 @@ from telethon.tl.types import (
 )
 
 from userbot import CMD_HELP, S_PACK_NAME as custompack, bot, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
 KANGING_STR = [
@@ -29,7 +29,7 @@ KANGING_STR = [
 ]
 
 
-@kyy_cmd(pattern="(?:tikel|kang)\\s?(.)?")
+@galoncmd(pattern="(?:tikel|kang)\\s?(.)?")
 async def kang(args):
     user = await bot.get_me()
     if not user.username:
@@ -271,7 +271,7 @@ async def resize_photo(photo):
     return image
 
 
-@kyy_cmd(pattern="stkrinfo$")
+@galoncmd(pattern="stkrinfo$")
 async def get_pack_info(event):
     if not event.is_reply:
         return await event.edit(
@@ -316,7 +316,7 @@ async def get_pack_info(event):
     await event.edit(OUTPUT)
 
 
-@kyy_cmd(pattern="get$")
+@galoncmd(pattern="get$")
 async def sticker_to_png(sticker):
     if not sticker.is_reply:
         await sticker.edit("`NULL information to fetch...`")

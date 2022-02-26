@@ -1,8 +1,8 @@
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 
 
-@kyy_cmd(pattern="(?:dm)\\s?(.*)?")
+@galoncmd(pattern="(?:dm)\\s?(.*)?")
 async def remoteaccess(event):
 
     p = event.pattern_match.group(1)

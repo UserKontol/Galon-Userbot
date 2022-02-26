@@ -4,11 +4,11 @@
 from PIL import Image
 import cv2
 import os
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import CMD_HELP, bot
 
 
-@kyy_cmd(pattern="tiny(?: |$)(.*)")
+@galoncmd(pattern="tiny(?: |$)(.*)")
 async def _(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):

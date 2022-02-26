@@ -1,13 +1,13 @@
 from asyncio import sleep
 from telethon.tl.types import ChatBannedRights
 from telethon.tl.functions.channels import EditBannedRequest
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 
 
 # Port By @VckyouuBitch From GeezProject
 # Perkontolan Dengan Hapus Credits
-@kyy_cmd(pattern="allban(?: |$)(.*)")
+@galoncmd(pattern="allban(?: |$)(.*)")
 async def testing(event):
     nikal = await event.get_chat()
     chutiya = await event.client.get_me()

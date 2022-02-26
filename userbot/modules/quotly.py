@@ -13,7 +13,7 @@ from asyncio.exceptions import TimeoutError
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP, bot, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 if 1 == 1:
     strings = {
@@ -42,7 +42,7 @@ if 1 == 1:
               "default_username_color": "#b48bf2"}
 
 
-@kyy_cmd(pattern="q")
+@galoncmd(pattern="q")
 async def quotess(qotli):
     if qotli.fwd_from:
         return
@@ -81,7 +81,7 @@ async def quotess(qotli):
         await qotli.edit()
 
 
-@kyy_cmd(pattern="xquote(?: |$)(.*)")
+@galoncmd(pattern="xquote(?: |$)(.*)")
 async def quote_search(event):
     if event.fwd_from:
         return

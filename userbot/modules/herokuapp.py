@@ -17,7 +17,7 @@ from userbot import (
     BOTLOG_CHATID,
     CMD_HELP,
     ALIVE_NAME)
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 heroku_api = "https://api.heroku.com"
 if HEROKU_APP_NAME is not None and HEROKU_API_KEY is not None:
@@ -33,7 +33,7 @@ else:
 """
 
 
-@kyy_cmd(pattern="(get|del) var(?: |$)(\\w*)")
+@galoncmd(pattern="(get|del) var(?: |$)(\\w*)")
 async def variable(var):
     exe = var.pattern_match.group(1)
     if app is None:
@@ -95,7 +95,7 @@ async def variable(var):
             return True
 
 
-@kyy_cmd(pattern=r'set var (\w*) ([\s\S]*)')
+@galoncmd(pattern=r'set var (\w*) ([\s\S]*)')
 async def set_var(var):
     await var.edit("`Sedang Menyetel Config Vars ヅ`")
     variable = var.pattern_match.group(1)
@@ -124,7 +124,7 @@ async def set_var(var):
 """
 
 
-@kyy_cmd(pattern="usage(?: |$)")
+@galoncmd(pattern="usage(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
@@ -197,7 +197,7 @@ async def dyno_usage(dyno):
             return True
 
 
-@kyy_cmd(pattern="logs")
+@galoncmd(pattern="logs")
 async def _(dyno):
     try:
         Heroku = heroku3.from_key(HEROKU_API_KEY)

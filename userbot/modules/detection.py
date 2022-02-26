@@ -1,9 +1,9 @@
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import CMD_HELP, bot, CMD_HANDLER as cmd
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 
-@kyy_cmd(pattern="detect(?: |$)(.*)")
+@galoncmd(pattern="detect(?: |$)(.*)")
 async def detect(event):
     if event.fwd_from:
         return

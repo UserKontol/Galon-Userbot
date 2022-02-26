@@ -1,10 +1,10 @@
 # Edit By @pikyus1
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern='thanks(?: |$)(.*)')
+@galoncmd(pattern='thanks(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("●▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬●\n"
@@ -17,7 +17,7 @@ async def typewriter(typew):
                      "●▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬●")
 
 
-@kyy_cmd(pattern='malam(?: |$)(.*)')
+@galoncmd(pattern='malam(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("╔═╦═╦╗╔═╦══╦═╦══╗\n"
@@ -30,7 +30,7 @@ async def typewriter(typew):
                      "╚╩╩╩╩╩═╩╩╩╩╩╝")
 
 
-@kyy_cmd(pattern='rumah(?: |$)(.*)')
+@galoncmd(pattern='rumah(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GAMBAR RUMAH**\n"
@@ -42,7 +42,7 @@ async def typewriter(typew):
                      "๑۩๑๑۩๑๑ ۩๑๑۩๑▓๑۩๑๑۩๑")
 
 
-@kyy_cmd(pattern='join(?: |$)(.*)')
+@galoncmd(pattern='join(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("_/﹋\\_\n"

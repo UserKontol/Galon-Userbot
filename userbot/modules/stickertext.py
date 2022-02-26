@@ -12,10 +12,10 @@ import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern="stick (.*)")
+@galoncmd(pattern="stick (.*)")
 async def stext(event):
     sticktext = event.pattern_match.group(1)
 

@@ -13,7 +13,7 @@ from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 
 from userbot import CMD_HELP, COUNTRY, TZ_NUMBER, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
 async def get_tz(con):
@@ -41,7 +41,7 @@ async def get_tz(con):
         return
 
 
-@kyy_cmd(pattern="time(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
+@galoncmd(pattern="time(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
 async def time_func(tdata):
     """ For .time command, return the time of
         1. The country passed as an argument,
@@ -104,7 +104,7 @@ async def time_func(tdata):
         return
 
 
-@kyy_cmd(pattern="date(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
+@galoncmd(pattern="date(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
 async def date_func(dat):
     """ For .date command, return the date of
         1. The country passed as an argument,

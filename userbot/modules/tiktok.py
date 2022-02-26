@@ -1,9 +1,9 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern="tiktok(?: |$)(.*)")
+@galoncmd(pattern="tiktok(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return

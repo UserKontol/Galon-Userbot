@@ -1,10 +1,10 @@
 from sqlalchemy.exc import IntegrityError
 
 from userbot import CMD_HELP, bot, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern="fban(?: |$)(.*)")
+@galoncmd(pattern="fban(?: |$)(.*)")
 async def fban(event):
     """Bans a user from connected federations."""
     try:
@@ -75,7 +75,7 @@ async def fban(event):
     )
 
 
-@kyy_cmd(pattern="unfban(?: |$)(.*)")
+@galoncmd(pattern="unfban(?: |$)(.*)")
 async def unfban(event):
     """Unbans a user from connected federations."""
     try:
@@ -144,7 +144,7 @@ async def unfban(event):
     )
 
 
-@kyy_cmd(pattern="addf(?: |$)(.*)")
+@galoncmd(pattern="addf(?: |$)(.*)")
 async def addf(event):
     """Adds current chat to connected federations."""
     try:
@@ -165,7 +165,7 @@ async def addf(event):
     await event.edit("**Added this group to federations list!**")
 
 
-@kyy_cmd(pattern="delf$")
+@galoncmd(pattern="delf$")
 async def delf(event):
     """Removes current chat from connected federations."""
     try:
@@ -177,7 +177,7 @@ async def delf(event):
     await event.edit("**Removed this group from federations list!**")
 
 
-@kyy_cmd(pattern="listf$")
+@galoncmd(pattern="listf$")
 async def listf(event):
     """List all connected federations."""
     try:
@@ -196,7 +196,7 @@ async def listf(event):
     await event.edit(msg)
 
 
-@kyy_cmd(pattern="clearf$")
+@galoncmd(pattern="clearf$")
 async def delf(event):
     """Removes all chats from connected federations."""
     try:

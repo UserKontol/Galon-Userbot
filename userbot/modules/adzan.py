@@ -3,12 +3,12 @@ import json
 import requests
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 PLACE = ""
 
 
-@kyy_cmd(pattern="adzan(?: |$)(.*)")
+@galoncmd(pattern="adzan(?: |$)(.*)")
 async def get_adzan(adzan):
     if not adzan.pattern_match.group(1):
         LOCATION = PLACE

@@ -9,7 +9,7 @@ from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 NO_ADMIN = "`Maaf Kamu Bukan Admin 👮`"
 
@@ -32,7 +32,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@kyy_cmd(pattern="startvc$")
+@galoncmd(pattern="startvc$")
 async def start_voice(c):
     chat = await c.get_chat()
     admin = chat.admin_rights
@@ -48,7 +48,7 @@ async def start_voice(c):
         await c.edit(f"**ERROR:** `{ex}`")
 
 
-@kyy_cmd(pattern="stopvc$")
+@galoncmd(pattern="stopvc$")
 async def stop_voice(c):
     chat = await c.get_chat()
     admin = chat.admin_rights
@@ -64,7 +64,7 @@ async def stop_voice(c):
         await c.edit(f"**ERROR:** `{ex}`")
 
 
-@kyy_cmd(pattern="vcinvite")
+@galoncmd(pattern="vcinvite")
 async def _(kyy):
     await kyy.edit("`Sedang Menginvite Member...`")
     users = []

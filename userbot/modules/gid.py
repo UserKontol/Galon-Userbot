@@ -1,10 +1,10 @@
 from PIL import Image, ImageDraw, ImageFont
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern="gid$")
+@galoncmd(pattern="gid$")
 async def image_maker(event):
     replied_user = await event.get_reply_message()
     await event.client.download_profile_photo(

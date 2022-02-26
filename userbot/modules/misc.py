@@ -7,7 +7,7 @@ import os
 import io
 import sys
 from userbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, CMD_HELP, UPSTREAM_REPO_URL, bot
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot.utils import time_formatter
 import urllib
 import requests
@@ -27,7 +27,7 @@ useragent = 'Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [('User-agent', useragent)]
 
 
-@kyy_cmd(pattern="random")
+@galoncmd(pattern="random")
 async def randomise(items):
     """ For .random command, get a random item from the list of items. """
     itemo = (items.text[8:]).split()
@@ -41,7 +41,7 @@ async def randomise(items):
                      itemo[index] + "`")
 
 
-@kyy_cmd(pattern="sleep ([0-9]+)$")
+@galoncmd(pattern="sleep ([0-9]+)$")
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
@@ -56,7 +56,7 @@ async def sleepybot(time):
     await time.edit("`OK, I'm awake now.`")
 
 
-@kyy_cmd(pattern="shutdown$")
+@galoncmd(pattern="shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
     await event.edit("`Mematikan Kyy-Userbot....`")
@@ -68,7 +68,7 @@ async def killdabot(event):
     await bot.disconnect()
 
 
-@kyy_cmd(pattern="restart$")
+@galoncmd(pattern="restart$")
 async def killdabot(event):
     await event.edit("`Restarting Kyy-Userbot...`")
     await asyncio.sleep(10)
@@ -81,7 +81,7 @@ async def killdabot(event):
     execle(sys.executable, *args, environ)
 
 
-@kyy_cmd(pattern="readme$")
+@galoncmd(pattern="readme$")
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
@@ -90,7 +90,7 @@ async def reedme(e):
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
 
-@kyy_cmd(pattern="repeat (.*)")
+@galoncmd(pattern="repeat (.*)")
 async def repeat(rep):
     cnt, txt = rep.pattern_match.group(1).split(' ', 1)
     replyCount = int(cnt)
@@ -104,7 +104,7 @@ async def repeat(rep):
     await rep.edit(replyText)
 
 
-@kyy_cmd(pattern="repo$")
+@galoncmd(pattern="repo$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
@@ -119,7 +119,7 @@ async def repo_is_here(wannasee):
     )
 
 
-@kyy_cmd(pattern="string$")
+@galoncmd(pattern="string$")
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
@@ -128,7 +128,7 @@ async def repo_is_here(wannasee):
     )
 
 
-@kyy_cmd(pattern="raw$")
+@galoncmd(pattern="raw$")
 async def raw(event):
     the_real_message = None
     reply_to_id = None
@@ -152,7 +152,7 @@ async def raw(event):
             caption="`Here's the decoded message data !!`")
 
 
-@kyy_cmd(pattern="reverse(?: |$)(\\d*)")
+@galoncmd(pattern="reverse(?: |$)(\\d*)")
 async def okgoogle(img):
     """ For .reverse command, Google search images and stickers. """
     if os.path.isfile("okgoogle.png"):

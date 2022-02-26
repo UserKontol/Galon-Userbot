@@ -1,11 +1,11 @@
 # Port By @IDnyaKosong From Kyy-Userbot
 # # Copyright (C) 2021 Kyy-Userbot
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 import asyncio
 
 
-@kyy_cmd(pattern="ftyping(?: |$)(.*)")
+@galoncmd(pattern="ftyping(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -23,7 +23,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="faudio(?: |$)(.*)")
+@galoncmd(pattern="faudio(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -41,7 +41,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="fvideo(?: |$)(.*)")
+@galoncmd(pattern="fvideo(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -59,7 +59,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="fgame(?: |$)(.*)")
+@galoncmd(pattern="fgame(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -77,7 +77,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="fround(?: |$)(.*)")
+@galoncmd(pattern="fround(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -97,7 +97,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="fphoto(?: |$)(.*)")
+@galoncmd(pattern="fphoto(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -117,7 +117,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="fdocument(?: |$)(.*)")
+@galoncmd(pattern="fdocument(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -137,7 +137,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="flocation(?: |$)(.*)")
+@galoncmd(pattern="flocation(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):
@@ -157,7 +157,7 @@ async def _(event):
         await asyncio.sleep(t)
 
 
-@kyy_cmd(pattern="fcontact(?: |$)(.*)")
+@galoncmd(pattern="fcontact(?: |$)(.*)")
 async def _(event):
     t = event.pattern_match.group(1)
     if not (t or t.isdigit()):

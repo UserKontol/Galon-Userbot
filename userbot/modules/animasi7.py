@@ -1,10 +1,10 @@
 from time import sleep
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import galoncmd
 
 
-@kyy_cmd(pattern="sange$")
+@galoncmd(pattern="sange$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("SAYANGGGGGGGGG 💕")
@@ -53,7 +53,7 @@ async def koc(e):
         await e.edit("AKU SANGE SAYANG💞")
 
 
-@kyy_cmd(pattern="orgil(?: |$)(.*)")
+@galoncmd(pattern="orgil(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`ANJING ADA ORANG GILA.....`")
@@ -111,7 +111,7 @@ async def typewriter(typew):
     await typew.edit("`-TAMAT-`")
 
 
-@kyy_cmd(pattern="ass(?: |$)(.*)")
+@galoncmd(pattern="ass(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Salam dulu biar sopan....`")
